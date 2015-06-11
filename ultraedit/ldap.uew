@@ -1,0 +1,66 @@
+/L20"LDAP" Line Comment = # File Extensions = SCHEMA
+#/Colors = 0,8421376,8421376,8421504,255,
+#/Colors Back = 16777215,16777215,16777215,16777215,16777215,
+#/Colors Auto Back = 1,1,1,1,1,
+#/Font Style = 0,0,0,0,0,
+/Delimiters = ~!@$%^*()+=/\[]{}:;"<>'´` ,	.?
+# /Delimiters = .{} ( )$
+
+/C1"Keywords" STYLE_KEYWORD
+attributetype
+objectClass objectIdentifier
+
+/C2"Core attributes" STYLE_FUNCTION
+countryName
+description
+employeeNumber email
+fax
+houseIdentifier
+l
+name
+o
+postalCode postalAddress
+street
+telephoneNumber
+userid userPassword
+
+/C3"Core objectClasses"
+top
+
+/C4"Settings" STYLE_METHOD
+AUXILIARY ABSTRACT
+DESC
+EQUALITY
+MAY MUST
+NAME
+OBSOLETE ORDERING
+SUP SYNTAX SUBSTR SINGLE-VALUE STRUCTURAL
+
+/C5"Operators" STYLE_OPERATOR
+:
+$
+
+# /C6"Matching rules" Colors = 4210816 Colors Back = 16777215 Colors Auto Back = 1 Font Style = 0
+/C6"Matching rules"
+booleanMatch bitStringMatch
+caseIgnoreIA5Match caseIgnoreIA5SubstringsMatch
+caseIgnoreListMatch caseIgnoreListSubstringsMatch
+caseIgnoreMatch caseIgnoreSubstringsMatch
+caseIgnoreOrderingMatch
+caseExactMatch caseExactOrderingMatch caseExactSubstringsMatch
+certificateExactMatch
+distinguishedNameMatch
+generalizedTimeMatch generalizedTimeOrderingMatch
+integerMatch integerOrderingMatch 
+numericStringMatch numericStringOrderingMatch numericStringSubstringsMatch
+octetStringMatch octetStringOrderingStringMatch octetStringSubstringsStringMatch objectIdentifierMatch
+presentationAddressMatch protocolInformationMatch
+telephoneNumberMatch telephoneNumberSubstringsMatch
+uniqueMemberMatch
+
+/C7"Syntaxes"
+boolean
+directoryString distinguishedName 
+integer
+numericString
+OID octetString
